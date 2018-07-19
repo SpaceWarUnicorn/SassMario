@@ -1,0 +1,34 @@
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%; }
+  html body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; }
+    html body a {
+      text-decoration: none;
+      color: inherit; }
+      html body a:hover {
+        color: white; }
+    html body header, html body .footer {
+      display: flex; }
+    html body ul {
+      display: flex;
+      list-style: none; }
+      html body ul li {
+        padding: 0 10px 0 10px; }
+    html body .header {
+      flex-basis: 400px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 2px solid white; }
+    html body .body-img {
+      flex: 4 0 1200px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 2px solid white; }
+    html body footer {
+      flex-basis: 300px;
+      background: rgba(0, 0, 0, 0.2);
+      border: 2px solid white; }
