@@ -10,8 +10,16 @@
   right: -9999px
   margin: auto
 
-.top-bar
-  background: rgba(255,255,255,0.1)
+header
+  padding: 1% 10% 0% 10%
+
+  a
+    text-decoration: none
+    color: inherit
+    &:hover
+      color: gray
+
+
   div
     flex: 1 1 auto
   .logo
@@ -63,13 +71,12 @@
 
 .header-arrow
   display: flex
-  padding: 30px 0 30px 0
+  padding: 0 20% 5% 10%
 
   .arrows, .count
     flex: 1 0 auto
 
   .arrows
-    padding: 0 0 0 10%
     justify-content: flex-start
     display: flex
     align-items: center
@@ -96,6 +103,5 @@
       transform: rotate(180deg)
 
   .count
-    padding: 0 30% 0 0
     display: flex
     justify-content: flex-end

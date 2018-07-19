@@ -5,6 +5,7 @@ html
     padding: 0
     margin: 0
     display: flex
+    font-family: sans-serif
     flex-direction: column
 
     .plus
@@ -49,17 +50,21 @@ html
       align-content: stretch
       flex-direction: column
       flex-basis: 500px
-      background: rgba(0,0,0,0.2)
-      border: 2px solid white
 
     @import 'header'
 
     .body-img
+      padding: 10% 20% 20% 20%
       flex: 4 0 1500px
-      background: rgba(0,0,0,0.2)
-      border: 2px solid white
+      display: flex
+      align-content: stretch
+      flex-direction: column
+
+    @import 'body'
 
     footer
       flex-basis: 300px
       background: rgba(0,0,0,0.2)
       border: 2px solid white
+
+    @import 'footer'

@@ -5,6 +5,7 @@ html {
     padding: 0;
     margin: 0;
     display: flex;
+    font-family: sans-serif;
     flex-direction: column; }
     html body .plus {
       margin: 0 8px 0 0;
@@ -40,9 +41,7 @@ html {
       display: flex;
       align-content: stretch;
       flex-direction: column;
-      flex-basis: 500px;
-      background: rgba(0, 0, 0, 0.2);
-      border: 2px solid white; }
+      flex-basis: 500px; }
     html body .fondo {
       overflow: hidden;
       position: absolute;
@@ -54,18 +53,23 @@ html {
       left: -9999px;
       right: -9999px;
       margin: auto; }
-    html body .top-bar {
-      background: rgba(255, 255, 255, 0.1); }
-      html body .top-bar div {
+    html body header {
+      padding: 1% 10% 0% 10%; }
+      html body header a {
+        text-decoration: none;
+        color: inherit; }
+        html body header a:hover {
+          color: gray; }
+      html body header div {
         flex: 1 1 auto; }
-      html body .top-bar .logo {
+      html body header .logo {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         padding: 0 0 0 20px; }
-        html body .top-bar .logo img {
+        html body header .logo img {
           width: 90px; }
-      html body .top-bar ul {
+      html body header ul {
         display: flex;
         justify-content: flex-end; }
     html body .middle {
@@ -98,11 +102,10 @@ html {
             align-self: center; }
     html body .header-arrow {
       display: flex;
-      padding: 30px 0 30px 0; }
+      padding: 0 20% 5% 10%; }
       html body .header-arrow .arrows, html body .header-arrow .count {
         flex: 1 0 auto; }
       html body .header-arrow .arrows {
-        padding: 0 0 0 10%;
         justify-content: flex-start;
         display: flex;
         align-items: center; }
@@ -123,13 +126,14 @@ html {
         html body .header-arrow .arrows .right {
           transform: rotate(180deg); }
       html body .header-arrow .count {
-        padding: 0 30% 0 0;
         display: flex;
         justify-content: flex-end; }
     html body .body-img {
+      padding: 10% 20% 20% 20%;
       flex: 4 0 1500px;
-      background: rgba(0, 0, 0, 0.2);
-      border: 2px solid white; }
+      display: flex;
+      align-content: stretch;
+      flex-direction: column; }
     html body footer {
       flex-basis: 300px;
       background: rgba(0, 0, 0, 0.2);
