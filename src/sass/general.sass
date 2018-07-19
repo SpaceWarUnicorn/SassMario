@@ -1,13 +1,30 @@
 html
   padding: 0
   margin: 0
-  height: 100%
-  width: 100%
   body
     padding: 0
     margin: 0
     display: flex
     flex-direction: column
+
+    .plus
+      margin: 0 8px 0 0
+      padding: 10px
+
+      .up
+        border: 1px solid black
+        padding: 7px 0 7px 0
+        position: absolute
+        z-index: -1
+        margin-top: -10px
+
+      .down
+        border: 1px solid black
+        padding: 0 7px 0 7px
+        position: absolute
+        z-index: -2
+        margin-left: -7px
+        margin-top: -3px
 
     a
       text-decoration: none
@@ -18,7 +35,6 @@ html
     header, .footer
       display: flex
 
-
     ul
       display: flex
       list-style: none
@@ -27,12 +43,19 @@ html
         padding: 0 10px 0 10px
 
     .header
-      flex-basis: 400px
+      position: relative
+      overflow: hidden
+      display: flex
+      align-content: stretch
+      flex-direction: column
+      flex-basis: 500px
       background: rgba(0,0,0,0.2)
       border: 2px solid white
 
+    @import 'header'
+
     .body-img
-      flex: 4 0 1200px
+      flex: 4 0 1500px
       background: rgba(0,0,0,0.2)
       border: 2px solid white
 

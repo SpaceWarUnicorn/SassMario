@@ -1,0 +1,101 @@
+.fondo
+  overflow: hidden
+  position: absolute
+  z-index: -100
+  min-width: 100%
+  overflow: hidden
+  top: -9999px
+  bottom: -9999px
+  left: -9999px
+  right: -9999px
+  margin: auto
+
+.top-bar
+  background: rgba(255,255,255,0.1)
+  div
+    flex: 1 1 auto
+  .logo
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    padding: 0 0 0 20px
+
+    img
+      width: 90px
+
+  ul
+    display: flex
+    justify-content: flex-end
+
+.middle
+  flex: 1 0 auto
+  display: flex
+  align-items: center
+  align-content: stretch
+
+  .content
+    flex: 1 0 auto
+    padding: 0 0 0 10%
+    display: flex
+    flex-direction: column
+
+  .title
+    display: flex
+    flex-direction: column
+    align-self: flex-start
+    padding: 0 0 20px 0
+    font-weight: 700
+    font-size: 3.5rem
+
+    .subtitle
+      font-weight: normal
+      font-size: 1.5rem
+
+    .text
+      display: flex
+      margin: 10px 0 0 0
+      align-self: flex-end
+      font-weight: bold
+      font-size: 1rem
+
+      label
+        align-self: center
+
+.header-arrow
+  display: flex
+  padding: 30px 0 30px 0
+
+  .arrows, .count
+    flex: 1 0 auto
+
+  .arrows
+    padding: 0 0 0 10%
+    justify-content: flex-start
+    display: flex
+    align-items: center
+
+    .arrow-head
+      height: 15px
+      width: 15px
+      border-left: 1.5px solid #757472
+      border-bottom: 1.5px solid #757472
+      transform: rotate(45deg)
+
+    .arrow-body
+      padding: 0 15px 0 15px
+      border: 1px solid #757472
+      margin: -10px 0px 0px -1px
+
+    .arrow
+      padding: 0 10px 0 0
+
+    .left
+      margin-top: -15px
+
+    .right
+      transform: rotate(180deg)
+
+  .count
+    padding: 0 30% 0 0
+    display: flex
+    justify-content: flex-end
