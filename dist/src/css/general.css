@@ -15,8 +15,7 @@ html {
       color: white;
       border-radius: 10px; }
       html body .button:hover {
-        color: #757472;
-        padding: .8rem 1.1rem; }
+        background: #757472; }
     html body .plus {
       margin: 0 8px 0 0;
       padding: 10px; }
@@ -36,8 +35,6 @@ html {
     html body a {
       text-decoration: none;
       color: inherit; }
-    html body header, html body .footer {
-      display: flex; }
     html body ul {
       display: flex;
       list-style: none; }
@@ -48,6 +45,8 @@ html {
           color: #757472; }
       html body ul li {
         padding: 0 10px 0 10px; }
+    html body header, html body .footer {
+      display: flex; }
     html body .header {
       position: relative;
       overflow: hidden;
@@ -74,9 +73,16 @@ html {
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        padding: 0 0 0 20px; }
+        padding: 0 20px; }
         html body header .logo img {
           width: 90px; }
+      html body header .menu {
+        display: flex;
+        justify-content: flex-end; }
+        html body header .menu .mobil {
+          align-self: center;
+          padding: 0 20px;
+          display: none; }
       html body header ul {
         display: flex;
         justify-content: flex-end; }
@@ -176,7 +182,19 @@ html {
       flex-direction: column;
       margin: 0 0 4rem 0; }
       html body .body-img .middle .images {
-        padding: 10% 0%; }
+        padding: 2rem 0;
+        display: flex;
+        justify-content: center; }
+        html body .body-img .middle .images .column {
+          display: flex;
+          align-content: stretch;
+          flex-direction: column;
+          align-self: stretch;
+          margin: 0 1rem 0 0; }
+          html body .body-img .middle .images .column img {
+            flex-grow: 1;
+            margin: 0 0rem 1rem 0;
+            width: 100%; }
     html body .body-img .more {
       display: flex;
       flex: 1 0 auto;
@@ -190,16 +208,80 @@ html {
       display: flex;
       align-content: stretch;
       flex-direction: column;
+      font-size: .8rem;
       background: #2b2b2b;
       color: white;
-      padding: 0% 10%; }
+      padding: 0% 8%; }
     html body .more-info {
       flex: 1 0 auto;
       display: flex;
-      padding: 3% 0%; }
+      padding: 3% 0%;
+      display: flex;
+      flex-wrap: wrap; }
       html body .more-info article {
-        flex: 1 0 auto; }
+        display: flex;
+        align-content: stretch;
+        flex-direction: column;
+        flex: 1 0 auto;
+        justify-content: space-around; }
+        html body .more-info article div {
+          padding: 0 1.5rem 1.5rem 0; }
+        html body .more-info article .title {
+          font-size: 1.3rem;
+          font-weight: bold; }
+        html body .more-info article .subtitle {
+          font-size: 1.2rem;
+          font-weight: 200;
+          color: #757472; }
+      html body .more-info .suscription {
+        justify-content: flex-start; }
+      html body .more-info .menu ul {
+        padding: 0;
+        margin-left: -5px; }
+        html body .more-info .menu ul a {
+          font-size: 1.2rem;
+          font-weight: 200;
+          color: #757472; }
+          html body .more-info .menu ul a:hover {
+            color: white; }
+      html body .more-info .recent-content {
+        display: flex;
+        align-items: center; }
+        html body .more-info .recent-content .img {
+          width: 7rem; }
+        html body .more-info .recent-content div {
+          padding: 0 .7rem 1rem 0; }
+        html body .more-info .recent-content .title {
+          font-size: 1.15rem;
+          font-weight: 550; }
+        html body .more-info .recent-content .subtitle {
+          font-size: 1rem; }
+      html body .more-info .input-mail {
+        font-size: 1.2rem;
+        font-weight: 200;
+        width: 100%;
+        padding: .8rem 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        margin: 0 0 1rem 0;
+        color: #757472; }
+      html body .more-info .button {
+        display: flex;
+        justify-content: center;
+        padding: .8rem 1rem;
+        border: none;
+        max-width: 100%;
+        border-radius: 0;
+        color: black;
+        background-color: white; }
+        html body .more-info .button:hover {
+          background: gray;
+          border: 1px inset black; }
     html body .footer {
       flex: 0 0 auto;
       align-items: center;
-      justify-content: space-between; }
+      justify-content: space-between;
+      border-style: inset;
+      padding: .5rem;
+      border-width: .2px 0 0 0;
+      border-color: lightgray; }

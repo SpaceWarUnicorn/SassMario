@@ -2,11 +2,77 @@
   flex: 1 0 auto
   display: flex
   padding: 3% 0%
+  display: flex
+  flex-wrap: wrap
 
   article
+    @include Vertical()
     flex: 1 0 auto
+    justify-content: space-around
+    div
+      padding: 0 1.5rem 1.5rem 0
+
+    .title
+      font-size: 1.3rem
+      font-weight: bold
+
+    .subtitle
+      font-size: 1.2rem
+      font-weight: 200
+      color: $primary-color
+
+  .suscription
+    justify-content: flex-start
+
+  .menu
+    ul
+      padding: 0
+      margin-left: -5px
+      a
+        font-size: 1.2rem
+        font-weight: 200
+        color: $primary-color
+        &:hover
+          color: white
+  .recent-content
+    display: flex
+    align-items: center
+    .img
+      width: 7rem
+    div
+      padding: 0 .7rem 1rem 0
+    .title
+      font-size: 1.15rem
+      font-weight: 550
+    .subtitle
+      font-size: 1rem
+  .input-mail
+    font-size: 1.2rem
+    font-weight: 200
+    width: 100%
+    padding: .8rem 1rem
+    background: rgba(255,255,255, 0.1)
+    border: none
+    margin: 0 0 1rem 0
+    color: $primary-color
+
+  .button
+    @include center()
+    padding: .8rem 1rem
+    border: none
+    max-width: 100%
+    border-radius: 0
+    color: black
+    background-color: white
+    &:hover
+      background: gray
+      border: 1px inset black
 
 .footer
   flex: 0 0 auto
   align-items: center
   justify-content: space-between
+  border-style: inset
+  padding: .5rem
+  border-width: .2px 0 0 0
+  border-color: lightgray

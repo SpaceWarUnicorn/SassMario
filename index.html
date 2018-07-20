@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="dist/src/css/general.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 </head>
 
 <body>
@@ -14,6 +15,7 @@
     <header class="top-bar">
       <div class="top-bar logo"><a href="#"><img src="src/media/logo.png" alt="logo"></a></div>
       <div class="top-bar menu">
+        <i class="mobil fas fa-bars"></i>
         <ul>
           <li><a href="#">element1</a></li>
           <li><a href="#">element2</a></li>
@@ -44,14 +46,14 @@
     <article class="header-arrow">
 
       <div class="arrows">
-          <div class="arrow left">
-            <div class="arrow-head"></div>
-            <div class="arrow-body"></div>
-          </div>
-          <div class="arrow right">
-            <div class="arrow-head"></div>
-            <div class="arrow-body"></div>
-          </div>
+        <div class="arrow left">
+          <div class="arrow-head"></div>
+          <div class="arrow-body"></div>
+        </div>
+        <div class="arrow right">
+          <div class="arrow-head"></div>
+          <div class="arrow-body"></div>
+        </div>
       </div>
 
       <div class="count">1/4</div>
@@ -74,7 +76,24 @@
       </div>
     </article>
     <article class="middle">
-      <div class="images">aqui van las imagenes</div>
+      <div class="images">
+        <div class="column"><img class='masonry' src="src/media/img/img1.jpg">
+          <img class='masonry' src="src/media/img/img2.jpg">
+          <img class='masonry' src="src/media/img/img3.jpg">
+          <img class='masonry' src="src/media/img/img4.jpg">
+        </div>
+        <div class="column">
+          <img class='masonry' src="src/media/img/img5.jpg">
+          <img class='masonry' src="src/media/img/img6.jpg">
+          <img class='masonry' src="src/media/img/img7.jpg">
+        </div>
+        <div class="column">
+          <img class='masonry' src="src/media/img/img8.jpg">
+          <img class='masonry' src="src/media/img/img9.jpg">
+          <img class='masonry' src="src/media/img/img10.jpg">
+          <img class='masonry' src="src/media/img/img11.jpg">
+        </div>
+      </div>
       <a class="button" href="#">Load more</a>
     </article>
     <article class="more">
@@ -85,10 +104,55 @@
 
   <footer>
     <section class="more-info">
-      <article class="contact">Contact us</article>
-      <article class="links">Links</article>
-      <article class="post">Recent Post</article>
-      <article class="suscription">NewsLetter</article>
+      <article class="contact">
+        <div class="title">Contact Us</div>
+        <div class="subtitle">description</div>
+        <div class="subtitle">description</div>
+        <div class="subtitle phone">description</div>
+        <div class="menu">
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+      </article>
+      <article class="links">
+        <div class="title">link</div>
+        <div class="subtitle">description</div>
+        <div class="subtitle">description</div>
+        <div class="subtitle">description</div>
+        <div class="subtitle">description</div>
+      </article>
+      <article class="post">
+        <div class="title">Recent Post</div>
+        <div class="recent-content">
+          <div class="recent-img">
+            <img class='img' src="src/media/img/img1.jpg">
+          </div>
+          <div class="description">
+            <div class="title">link</div>
+            <div class="subtitle">description</div>
+          </div>
+        </div>
+        <div class="recent-content">
+          <div class="recent-img">
+            <img class='img' src="src/media/img/img1.jpg">
+          </div>
+          <div class="description">
+            <div class="title">link</div>
+            <div class="subtitle">description</div>
+          </div>
+        </div>
+      </article>
+      <article class="suscription">
+        <div class="title">Newsletter</div><div>
+        <input type='email' placeholder="Email" class='input-mail' />
+        <label class='button'>SUSCRIBE</label></div>
+      </article>
     </section>
     <section class="footer">
       <div>firma</div>
