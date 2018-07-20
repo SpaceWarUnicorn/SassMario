@@ -82,7 +82,7 @@ html {
         html body header .menu .mobil {
           align-self: center;
           padding: 0 20px;
-          display: flex; }
+          display: none; }
           html body header .menu .mobil .fas:hover {
             color: #757472; }
       html body header ul {
@@ -299,5 +299,7 @@ html {
 @media screen and (max-width: 700px) {
   header .menu ul {
     display: none; }
+  header .mobil {
+    display: flex; }
   .footer .menu ul {
     display: none; } }
