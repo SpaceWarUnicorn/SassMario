@@ -34,7 +34,7 @@ html {
         margin-top: -3px; }
     html body a {
       text-decoration: none;
-      color: black; }
+      color: inherit; }
     html body ul {
       display: flex;
       list-style: none; }
@@ -253,10 +253,7 @@ html {
         margin-left: -5px; }
         html body .more-info .menu ul a {
           font-size: 1.2rem;
-          font-weight: 200;
-          color: #757472; }
-          html body .more-info .menu ul a:hover {
-            color: white; }
+          font-weight: 200; }
       html body .more-info .recent-content {
         display: flex;
         align-items: center; }
@@ -300,5 +297,7 @@ html {
       border-color: lightgray; }
 
 @media screen and (max-width: 700px) {
-  .menu ul {
+  header .menu ul {
+    display: none; }
+  .footer .menu ul {
     display: none; } }
