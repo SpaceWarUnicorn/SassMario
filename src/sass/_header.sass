@@ -13,13 +13,6 @@
 header
   padding: 1% 10% 0% 10%
 
-  a
-    text-decoration: none
-    color: inherit
-    &:hover
-      color: gray
-
-
   div
     flex: 1 1 auto
   .logo
@@ -44,12 +37,10 @@ header
   .content
     flex: 1 0 auto
     padding: 0 0 0 10%
-    display: flex
-    flex-direction: column
+    @include Vertical()
 
   .title
-    display: flex
-    flex-direction: column
+    @include Vertical()
     align-self: flex-start
     padding: 0 0 20px 0
     font-weight: 700
@@ -84,13 +75,13 @@ header
     .arrow-head
       height: 15px
       width: 15px
-      border-left: 1.5px solid #757472
-      border-bottom: 1.5px solid #757472
-      transform: rotate(45deg)
+      border-left: 1.5px solid $primary-color
+      border-bottom: 1.5px solid $primary-color
+      @include transform(rotate(45deg))
 
     .arrow-body
       padding: 0 15px 0 15px
-      border: 1px solid #757472
+      border: 1px solid $primary-color
       margin: -10px 0px 0px -1px
 
     .arrow
@@ -100,7 +91,7 @@ header
       margin-top: -15px
 
     .right
-      transform: rotate(180deg)
+      @include transform(rotate(180deg))
 
   .count
     display: flex

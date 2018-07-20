@@ -1,0 +1,15 @@
+$primary-color: #757472
+
+@mixin transform($property)
+  -webkit-transform: $property
+  -ms-transform: $property
+  transform: $property
+
+@mixin center()
+  display: flex
+  justify-content: center
+
+@mixin Vertical()
+  display: flex
+  align-content: stretch
+  flex-direction: column

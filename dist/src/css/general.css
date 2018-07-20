@@ -5,8 +5,18 @@ html {
     padding: 0;
     margin: 0;
     display: flex;
+    align-content: stretch;
+    flex-direction: column;
     font-family: sans-serif;
-    flex-direction: column; }
+    text-transform: capitalize; }
+    html body .button {
+      padding: .7rem 1rem;
+      background: black;
+      color: white;
+      border-radius: 10px; }
+      html body .button:hover {
+        color: #757472;
+        padding: .8rem 1.1rem; }
     html body .plus {
       margin: 0 8px 0 0;
       padding: 10px; }
@@ -26,13 +36,16 @@ html {
     html body a {
       text-decoration: none;
       color: inherit; }
-      html body a:hover {
-        color: white; }
     html body header, html body .footer {
       display: flex; }
     html body ul {
       display: flex;
       list-style: none; }
+      html body ul a {
+        text-transform: uppercase;
+        font-size: .8rem; }
+        html body ul a:hover {
+          color: #757472; }
       html body ul li {
         padding: 0 10px 0 10px; }
     html body .header {
@@ -41,7 +54,7 @@ html {
       display: flex;
       align-content: stretch;
       flex-direction: column;
-      flex-basis: 500px; }
+      flex: 0 500px; }
     html body .fondo {
       overflow: hidden;
       position: absolute;
@@ -55,11 +68,6 @@ html {
       margin: auto; }
     html body header {
       padding: 1% 10% 0% 10%; }
-      html body header a {
-        text-decoration: none;
-        color: inherit; }
-        html body header a:hover {
-          color: gray; }
       html body header div {
         flex: 1 1 auto; }
       html body header .logo {
@@ -81,9 +89,11 @@ html {
         flex: 1 0 auto;
         padding: 0 0 0 10%;
         display: flex;
+        align-content: stretch;
         flex-direction: column; }
       html body .middle .title {
         display: flex;
+        align-content: stretch;
         flex-direction: column;
         align-self: flex-start;
         padding: 0 0 20px 0;
@@ -114,6 +124,8 @@ html {
           width: 15px;
           border-left: 1.5px solid #757472;
           border-bottom: 1.5px solid #757472;
+          -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
         html body .header-arrow .arrows .arrow-body {
           padding: 0 15px 0 15px;
@@ -124,17 +136,70 @@ html {
         html body .header-arrow .arrows .left {
           margin-top: -15px; }
         html body .header-arrow .arrows .right {
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
           transform: rotate(180deg); }
       html body .header-arrow .count {
         display: flex;
         justify-content: flex-end; }
     html body .body-img {
-      padding: 10% 20% 20% 20%;
-      flex: 4 0 1500px;
+      padding: 7% 10%;
+      flex: 4 0 auto;
+      display: flex;
       display: flex;
       align-content: stretch;
       flex-direction: column; }
+    html body .body-img .title {
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      padding: 0 0 20px 0; }
+    html body .body-img .subtitle {
+      color: #757472;
+      display: flex;
+      justify-content: center;
+      padding: 0 0 10px 0; }
+    html body .body-img .menu {
+      flex: 0 0 auto;
+      display: flex;
+      justify-content: center; }
+      html body .body-img .menu ul {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; }
+    html body .body-img .middle {
+      flex: 4 0 auto;
+      display: flex;
+      align-content: stretch;
+      flex-direction: column;
+      margin: 0 0 4rem 0; }
+      html body .body-img .middle .images {
+        padding: 10% 0%; }
+    html body .body-img .more {
+      display: flex;
+      flex: 1 0 auto;
+      padding: 3% 10%;
+      justify-content: space-around;
+      align-items: center;
+      border-style: solid;
+      border-width: 1px 0px;
+      border-color: lightgray; }
     html body footer {
-      flex-basis: 300px;
-      background: rgba(0, 0, 0, 0.2);
-      border: 2px solid white; }
+      display: flex;
+      align-content: stretch;
+      flex-direction: column;
+      background: #2b2b2b;
+      color: white;
+      padding: 0% 10%; }
+    html body .more-info {
+      flex: 1 0 auto;
+      display: flex;
+      padding: 3% 0%; }
+      html body .more-info article {
+        flex: 1 0 auto; }
+    html body .footer {
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: space-between; }

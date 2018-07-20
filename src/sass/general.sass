@@ -1,12 +1,23 @@
+@import 'base'
 html
   padding: 0
   margin: 0
   body
     padding: 0
     margin: 0
-    display: flex
+    @include Vertical()
     font-family: sans-serif
-    flex-direction: column
+    text-transform: capitalize
+
+    .button
+      padding: .7rem 1rem
+      background: black
+      color: white
+      border-radius: 10px
+      &:hover
+        color: $primary-color
+        padding: .8rem 1.1rem
+
 
     .plus
       margin: 0 8px 0 0
@@ -30,8 +41,7 @@ html
     a
       text-decoration: none
       color: inherit
-      &:hover
-        color: white
+
 
     header, .footer
       display: flex
@@ -39,32 +49,33 @@ html
     ul
       display: flex
       list-style: none
-
+      a
+        text-transform: uppercase
+        font-size: .8rem
+        &:hover
+          color: $primary-color
       li
         padding: 0 10px 0 10px
 
     .header
       position: relative
       overflow: hidden
-      display: flex
-      align-content: stretch
-      flex-direction: column
-      flex-basis: 500px
+      @include Vertical()
+      flex: 0 500px
 
     @import 'header'
 
     .body-img
-      padding: 10% 20% 20% 20%
-      flex: 4 0 1500px
+      padding: 7% 10%
+      flex: 4 0 auto
       display: flex
-      align-content: stretch
-      flex-direction: column
+      @include Vertical()
 
     @import 'body'
 
     footer
-      flex-basis: 300px
-      background: rgba(0,0,0,0.2)
-      border: 2px solid white
-
+      @include Vertical()
+      background: #2b2b2b
+      color: white
+      padding: 0% 10%
     @import 'footer'
