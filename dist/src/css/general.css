@@ -34,7 +34,7 @@ html {
         margin-top: -3px; }
     html body a {
       text-decoration: none;
-      color: inherit; }
+      color: black; }
     html body ul {
       display: flex;
       list-style: none; }
@@ -75,14 +75,16 @@ html {
         align-items: center;
         padding: 0 20px; }
         html body header .logo img {
-          width: 90px; }
+          width: 100px; }
       html body header .menu {
         display: flex;
         justify-content: flex-end; }
         html body header .menu .mobil {
           align-self: center;
           padding: 0 20px;
-          display: none; }
+          display: flex; }
+          html body header .menu .mobil .fas:hover {
+            color: #757472; }
       html body header ul {
         display: flex;
         justify-content: flex-end; }
@@ -114,6 +116,12 @@ html {
           align-self: flex-end;
           font-weight: bold;
           font-size: 1rem; }
+          html body .middle .title .text:hover label {
+            font-size: 1.2rem; }
+          html body .middle .title .text:hover .plus .up {
+            border: 2px solid black; }
+          html body .middle .title .text:hover .plus .down {
+            border: 2px solid black; }
           html body .middle .title .text label {
             align-self: center; }
     html body .header-arrow {
@@ -139,6 +147,11 @@ html {
           margin: -10px 0px 0px -1px; }
         html body .header-arrow .arrows .arrow {
           padding: 0 10px 0 0; }
+          html body .header-arrow .arrows .arrow:hover .arrow-body {
+            border: 2px solid #757472; }
+          html body .header-arrow .arrows .arrow:hover .arrow-head {
+            border-left: 2.5px solid #757472;
+            border-bottom: 2.5px solid #757472; }
         html body .header-arrow .arrows .left {
           margin-top: -15px; }
         html body .header-arrow .arrows .right {
@@ -285,3 +298,7 @@ html {
       padding: .5rem;
       border-width: .2px 0 0 0;
       border-color: lightgray; }
+
+@media screen and (max-width: 700px) {
+  .menu ul {
+    display: none; } }
