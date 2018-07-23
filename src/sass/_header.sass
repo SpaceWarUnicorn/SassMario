@@ -28,13 +28,7 @@ header
   .menu
     display: flex
     justify-content: flex-end
-    .mobil
-      align-self: center
-      padding: 0 20px
-      display: none
-      .fas
-        &:hover
-          color: $primary-color
+    @include menu()
 
   ul
     display: flex
@@ -85,39 +79,7 @@ header
   display: flex
   padding: 0 20% 5% 10%
 
-  .arrows, .count
-    flex: 1 0 auto
-
-  .arrows
-    justify-content: flex-start
-    display: flex
-    align-items: center
-
-    .arrow-head
-      height: 15px
-      width: 15px
-      border-left: 1.5px solid $primary-color
-      border-bottom: 1.5px solid $primary-color
-      @include transform(rotate(45deg))
-
-    .arrow-body
-      padding: 0 15px 0 15px
-      border: 1px solid $primary-color
-      margin: -10px 0px 0px -1px
-
-    .arrow
-      padding: 0 10px 0 0
-      &:hover
-        .arrow-body
-          border: 2px solid $primary-color
-        .arrow-head
-          border-left: 2.5px solid $primary-color
-          border-bottom: 2.5px solid $primary-color
-    .left
-      margin-top: -15px
-
-    .right
-      @include transform(rotate(180deg))
+  @include arrows()
 
   .count
     display: flex

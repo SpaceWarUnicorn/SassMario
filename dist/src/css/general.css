@@ -82,7 +82,7 @@ html {
         html body header .menu .mobil {
           align-self: center;
           padding: 0 20px;
-          display: none; }
+          display: flex; }
           html body header .menu .mobil .fas:hover {
             color: #757472; }
       html body header ul {
@@ -295,11 +295,21 @@ html {
       padding: .5rem;
       border-width: .2px 0 0 0;
       border-color: lightgray; }
+      html body .footer .mobil {
+        align-self: center;
+        padding: 0 20px;
+        display: flex; }
+        html body .footer .mobil .fas:hover {
+          color: #757472; }
 
 @media screen and (max-width: 700px) {
   header .menu ul {
     display: none; }
-  header .mobil {
-    display: flex; }
   .footer .menu ul {
+    display: none; } }
+
+@media screen and (min-width: 700px) {
+  header .menu .mobil i {
+    display: none; }
+  .footer .menu .mobil i {
     display: none; } }

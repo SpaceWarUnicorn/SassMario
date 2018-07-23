@@ -13,3 +13,67 @@ $primary-color: #757472
   display: flex
   align-content: stretch
   flex-direction: column
+
+@mixin menu()
+  .mobil
+    align-self: center
+    padding: 0 20px
+    display: flex
+    .fas
+      &:hover
+        color: $primary-color
+
+@mixin plus()
+  .plus
+    margin: 0 8px 0 0
+    padding: 10px
+
+    .up
+      border: 1px solid black
+      padding: 7px 0 7px 0
+      position: absolute
+      z-index: -1
+      margin-top: -10px
+
+    .down
+      border: 1px solid black
+      padding: 0 7px 0 7px
+      position: absolute
+      z-index: -2
+      margin-left: -7px
+      margin-top: -3px
+
+@mixin arrows()
+  .arrows, .count
+    flex: 1 0 auto
+
+  .arrows
+    justify-content: flex-start
+    display: flex
+    align-items: center
+
+    .arrow-head
+      height: 15px
+      width: 15px
+      border-left: 1.5px solid $primary-color
+      border-bottom: 1.5px solid $primary-color
+      @include transform(rotate(45deg))
+
+    .arrow-body
+      padding: 0 15px 0 15px
+      border: 1px solid $primary-color
+      margin: -10px 0px 0px -1px
+
+    .arrow
+      padding: 0 10px 0 0
+      &:hover
+        .arrow-body
+          border: 2px solid $primary-color
+        .arrow-head
+          border-left: 2.5px solid $primary-color
+          border-bottom: 2.5px solid $primary-color
+    .left
+      margin-top: -15px
+
+    .right
+      @include transform(rotate(180deg))  

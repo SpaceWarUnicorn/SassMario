@@ -18,24 +18,7 @@ html
         background: $primary-color
 
 
-    .plus
-      margin: 0 8px 0 0
-      padding: 10px
-
-      .up
-        border: 1px solid black
-        padding: 7px 0 7px 0
-        position: absolute
-        z-index: -1
-        margin-top: -10px
-
-      .down
-        border: 1px solid black
-        padding: 0 7px 0 7px
-        position: absolute
-        z-index: -2
-        margin-left: -7px
-        margin-top: -3px
+    @include plus()
 
     a
       text-decoration: none
