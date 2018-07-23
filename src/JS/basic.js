@@ -1,7 +1,7 @@
 
   let burger = document.querySelector('#mobil');
   let menu = document.querySelector('#menu');
-
+  let menu2 = document.getElementById('menu2');
   menu.addEventListener('click',() => {
     menu.style.display = 'none';
   });
@@ -16,6 +16,15 @@
   });
 
   window.addEventListener('click',(e)=>{
-    if (!document.getElementById('menu2').contains(e.target)){
+    if (!menu2.contains(e.target)){
       menu.style.display = 'none';}
   });
+
+  window.addEventListener('resize', (e) =>{
+    if(window.innerWidth > 780){
+      menu.style.display='flex';
+    }
+    else{
+      menu.style.display='none';
+    }
+});
