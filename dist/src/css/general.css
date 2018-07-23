@@ -16,22 +16,6 @@ html {
       border-radius: 10px; }
       html body .button:hover {
         background: #757472; }
-    html body .plus {
-      margin: 0 8px 0 0;
-      padding: 10px; }
-      html body .plus .up {
-        border: 1px solid black;
-        padding: 7px 0 7px 0;
-        position: absolute;
-        z-index: -1;
-        margin-top: -10px; }
-      html body .plus .down {
-        border: 1px solid black;
-        padding: 0 7px 0 7px;
-        position: absolute;
-        z-index: -2;
-        margin-left: -7px;
-        margin-top: -3px; }
     html body a {
       text-decoration: none;
       color: inherit; }
@@ -78,11 +62,10 @@ html {
           width: 100px; }
       html body header .menu {
         display: flex;
-        justify-content: flex-end; }
+        justify-content: flex-end;
+        align-items: center; }
         html body header .menu .mobil {
-          align-self: center;
-          padding: 0 20px;
-          display: flex; }
+          padding: 0 20px; }
           html body header .menu .mobil .fas:hover {
             color: #757472; }
       html body header ul {
@@ -116,6 +99,22 @@ html {
           align-self: flex-end;
           font-weight: bold;
           font-size: 1rem; }
+          html body .middle .title .text .plus {
+            margin: 0 8px 0 0;
+            padding: 10px; }
+            html body .middle .title .text .plus .up {
+              border: 1px solid black;
+              padding: 7px 0 7px 0;
+              position: absolute;
+              z-index: -1;
+              margin-top: -10px; }
+            html body .middle .title .text .plus .down {
+              border: 1px solid black;
+              padding: 0 7px 0 7px;
+              position: absolute;
+              z-index: -2;
+              margin-left: -7px;
+              margin-top: -3px; }
           html body .middle .title .text:hover label {
             font-size: 1.2rem; }
           html body .middle .title .text:hover .plus .up {
@@ -228,88 +227,125 @@ html {
     html body .more-info {
       flex: 1 0 auto;
       display: flex;
-      padding: 3% 0%;
-      display: flex;
+      padding: 4rem 0 2rem 0;
       flex-wrap: wrap; }
-      html body .more-info article {
+      html body .more-info .title {
+        font-size: 1.3rem;
+        font-weight: 700; }
+      html body .more-info .subtitle {
+        font-size: 1.2rem;
+        font-weight: 200;
+        color: #757472; }
+      html body .more-info .info-container {
         display: flex;
-        align-content: stretch;
-        flex-direction: column;
         flex: 1 0 auto;
         justify-content: space-around; }
-        html body .more-info article div {
-          padding: 0 1.5rem 1.5rem 0; }
-        html body .more-info article .title {
-          font-size: 1.3rem;
-          font-weight: bold; }
-        html body .more-info article .subtitle {
+        html body .more-info .info-container article {
+          display: flex;
+          align-content: stretch;
+          flex-direction: column;
+          flex: 1 0 auto; }
+          html body .more-info .info-container article div {
+            padding: 0 0 2vh 1vw; }
+      html body .more-info .suscription {
+        justify-content: flex-start;
+        flex: 1 0 auto; }
+        html body .more-info .suscription .input-mail {
           font-size: 1.2rem;
           font-weight: 200;
+          width: 100%;
+          padding: .8rem 1rem;
+          background: rgba(255, 255, 255, 0.1);
+          border: none;
+          margin: 3.5vh 0 1rem 0;
           color: #757472; }
-      html body .more-info .suscription {
-        justify-content: flex-start; }
+        html body .more-info .suscription .button {
+          display: flex;
+          justify-content: center;
+          padding: .8rem 1rem;
+          border: none;
+          max-width: 100%;
+          border-radius: 0;
+          color: black;
+          background-color: white; }
+          html body .more-info .suscription .button:hover {
+            background: gray;
+            border: 1px inset black; }
       html body .more-info .menu ul {
         padding: 0;
         margin-left: -5px; }
         html body .more-info .menu ul a {
           font-size: 1.2rem;
           font-weight: 200; }
-      html body .more-info .recent-content {
+      html body .more-info .post .recent-content {
+        padding-left: 0px;
         display: flex;
         align-items: center; }
-        html body .more-info .recent-content .img {
+        html body .more-info .post .recent-content .img {
           width: 7rem; }
-        html body .more-info .recent-content div {
-          padding: 0 .7rem 1rem 0; }
-        html body .more-info .recent-content .title {
+        html body .more-info .post .recent-content .title {
           font-size: 1.15rem;
           font-weight: 550; }
-        html body .more-info .recent-content .subtitle {
+        html body .more-info .post .recent-content .subtitle {
           font-size: 1rem; }
-      html body .more-info .input-mail {
-        font-size: 1.2rem;
-        font-weight: 200;
-        width: 100%;
-        padding: .8rem 1rem;
-        background: rgba(255, 255, 255, 0.1);
-        border: none;
-        margin: 0 0 1rem 0;
-        color: #757472; }
-      html body .more-info .button {
-        display: flex;
-        justify-content: center;
-        padding: .8rem 1rem;
-        border: none;
-        max-width: 100%;
-        border-radius: 0;
-        color: black;
-        background-color: white; }
-        html body .more-info .button:hover {
-          background: gray;
-          border: 1px inset black; }
     html body .footer {
       flex: 0 0 auto;
       align-items: center;
       justify-content: space-between;
       border-style: inset;
-      padding: .5rem;
+      padding: 10px 2vw 10px 2vw;
       border-width: .2px 0 0 0;
       border-color: lightgray; }
-      html body .footer .mobil {
-        align-self: center;
-        padding: 0 20px;
-        display: flex; }
-        html body .footer .mobil .fas:hover {
+
+@media screen and (max-width: 780px) {
+  header .menu {
+    display: inline-block;
+    position: relative; }
+    header .menu ul {
+      display: block;
+      margin: 10rem 0 0 0;
+      padding: 0;
+      position: absolute;
+      z-index: 2; }
+      header .menu ul li {
+        margin: 2px 0;
+        padding: 1rem 32vw;
+        background: rgba(255, 255, 255, 0.4);
+        border-style: inset;
+        border-width: .5px 0px;
+        border-color: black; }
+        header .menu ul li:hover {
+          background: rgba(0, 0, 0, 0.4); }
+        header .menu ul li:hover a {
           color: #757472; }
-
-@media screen and (max-width: 700px) {
-  header .menu ul {
-    display: none; }
-  .footer .menu ul {
-    display: none; } }
-
-@media screen and (min-width: 700px) {
   header .menu .mobil i {
-    display: none; }
-  .footer .menu .mobil i {
+    font-size: 1.5rem; }
+  .more {
+    font-size: 2.5vw; }
+    .more .button {
+      font-size: 2.5vw; }
+  footer .more-info .info-container .title {
+    font-size: 0.9rem; }
+  footer .more-info .info-container .subtitle {
+    font-size: 0.8rem; }
+  footer .more-info .info-container .menu ul a {
+    font-size: 0.7rem; }
+  footer .more-info .info-container .post .recent-content {
+    font-size: 0.7rem; }
+    footer .more-info .info-container .post .recent-content .img {
+      width: 4rem; }
+    footer .more-info .info-container .post .recent-content .title {
+      font-size: 0.8rem;
+      font-weight: 550; }
+  footer .more-info .suscription .titlepx {
+    font-size: 1rem; }
+  footer .more-info .suscription .input-mail {
+    font-size: .9rem; }
+  footer .footer {
+    font-size: 2vw; }
+    footer .footer .menu ul a {
+      font-size: 1.5vw; } }
+
+@media screen and (min-width: 780px) {
+  header .menu .mobil i {
     display: none; } }

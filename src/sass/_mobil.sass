@@ -1,21 +1,72 @@
-@media screen and (max-width: 700px)
+@media screen and (max-width: 780px)
   header
     .menu
+      display: inline-block
+      position: relative
       ul
-        display: none
-
-  .footer
-    .menu
-      ul
-        display: none
-
-@media screen and (min-width: 700px)
-  header
+        display: block
+        margin: 10rem 0 0 0
+        padding: 0
+        position: absolute
+        z-index: 2
+        li
+          margin: 2px 0
+          padding: 1rem 32vw
+          background: rgba(255, 255, 255, 0.4)
+          border-style: inset
+          border-width: .5px 0px
+          border-color: black
+          &:hover
+            background: rgba(0, 0, 0, 0.4)
+          &:hover a
+            color: $primary-color
     .menu
       .mobil
         i
-         display: none
-  .footer
+          font-size: 1.5rem
+
+  .more
+    font-size: 2.5vw
+    .button
+      font-size: 2.5vw
+
+  footer
+    .more-info
+      .info-container
+        .title
+          font-size: 0.9rem
+        .subtitle
+          font-size: 0.8rem
+        .menu
+          ul
+            a
+              font-size: 0.7rem
+        .post
+          .recent-content
+            .img
+              width: 4rem
+            .title
+              font-size: 0.8rem
+              font-weight: 550
+            .subtitle
+            font-size: 0.7rem
+
+      .suscription
+        .titlepx
+          font-size: 1rem
+        .input-mail
+          font-size: .9rem
+
+
+    .footer
+      font-size: 2vw
+      .menu
+        ul
+          a
+            font-size: 1.5vw
+
+@media screen and (min-width: 780px)
+  header
     .menu
       .mobil
         i
