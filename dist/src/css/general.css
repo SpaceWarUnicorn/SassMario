@@ -328,8 +328,10 @@ html {
     font-size: 0.9rem; }
   footer .more-info .info-container .subtitle {
     font-size: 0.8rem; }
-  footer .more-info .info-container .menu ul a {
-    font-size: 0.7rem; }
+  footer .more-info .info-container .menu ul li {
+    padding: 0 2vw 0 0; }
+    footer .more-info .info-container .menu ul li a {
+      font-size: 0.7rem; }
   footer .more-info .info-container .post .recent-content {
     font-size: 0.7rem; }
     footer .more-info .info-container .post .recent-content .img {
